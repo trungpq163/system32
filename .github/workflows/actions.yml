@@ -28,6 +28,11 @@ jobs:
           cd website
           npm run build
 
+      - name: Auto crawler data algolia
+        uses: algolia/docsearch-scraper@v3
+        with:
+          args: --config ./website/config.json
+
   pr:
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'pull_request' }}
