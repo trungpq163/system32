@@ -1,7 +1,6 @@
 module.exports = {
   title: 'system32',
-  tagline:
-    'An extraordinary document on the Internet contains some things that I read!!',
+  tagline: 'An extraordinary document on the Internet contains some things!',
   url: 'http://system32.vercel.app',
   baseUrl: '/',
   trailingSlash: true,
