@@ -28,9 +28,13 @@ jobs:
           cd website
           npm run build
 
+      # docker run -it --env-file=.env -e "CONFIG=$(cat ../config.json | jq -r tostring)" algolia/docsearch-scraper
       # Pull image algolia/docsearch-scraper docker
-      - name: Pull image algolia/docsearch-scraper
-        run: docker pull algolia/docsearch-scraper
+      # and then run the command
+      - name: Run DocSearch
+        run: |
+          cd website
+          docker run -it --env-file=.env.production -e "CONFIG=$(cat config.json | jq -r tostring)" algolia/docsearch-scraper
 
   pr:
     runs-on: ubuntu-latest
