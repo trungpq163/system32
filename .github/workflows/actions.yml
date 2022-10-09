@@ -28,16 +28,16 @@ jobs:
           cd website
           npm run build
 
-      - name: Get the content of algolia.json as config
-        id: algolia_config
-        run: echo "::set-output name=config::$(cat algolia.json | jq -r tostring)"
+      - name: Get the content of config.json as config
+        id: docusaurus-2
+        run: echo "::set-output name=config::$(cat config.json | jq -r tostring)"
 
       - name: Push indices to Algolia
         uses: signcl/docsearch-scraper-action@master
         env:
           APPLICATION_ID: 8E6LWK96JA
           API_KEY: 0285def6cfdb5ff895b665c604f0eead
-          CONFIG: ${{ steps.algolia_config.outputs.config }}
+          CONFIG: ${{ steps.docusaurus-2.outputs.config }}
 
   pr:
     runs-on: ubuntu-latest
