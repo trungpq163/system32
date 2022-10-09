@@ -28,10 +28,16 @@ jobs:
           cd website
           npm run build
 
-      - name: Run DocSearch
-        run: |
-          cd website
-          docker run -it --env-file=.env -e "CONFIG=$(cat config.json)" algolia/docsearch-scraper
+      - name: Get the content of algolia.json as config
+        id: algolia_config
+        run: echo "::set-output name=config::$(cat algolia.json | jq -r tostring)"
+
+      - name: Push indices to Algolia
+        uses: signcl/docsearch-scraper-action@master
+        env:
+          APPLICATION_ID: 8E6LWK96JA
+          API_KEY: 0285def6cfdb5ff895b665c604f0eead
+          CONFIG: ${{ steps.algolia_config.outputs.config }}
 
   pr:
     runs-on: ubuntu-latest
