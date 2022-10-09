@@ -28,10 +28,9 @@ jobs:
           cd website
           npm run build
 
-      - name: Auto crawler data algolia
-        uses: algolia/docsearch-scraper@v3
-        with:
-          args: --config ./website/config.json
+      # Pull image algolia/docsearch-scraper docker
+      - name: Pull image algolia/docsearch-scraper
+        run: docker pull algolia/docsearch-scraper
 
   pr:
     runs-on: ubuntu-latest
