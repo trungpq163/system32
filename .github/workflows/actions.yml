@@ -19,10 +19,14 @@ jobs:
         with:
           node-version: '14'
       - name: NPM Installation
-        run: npm install
+        run: |
+          cd website
+          npm install
 
       - name: Build
-        run: npm run build
+        run: |
+          cd website
+          npm run build
 
   pr:
     runs-on: ubuntu-latest
@@ -38,7 +42,11 @@ jobs:
         with:
           node-version: '14'
       - name: NPM Installation
-        run: npm install
+        run: |
+          cd website
+          npm install
 
       - name: Build
-        run: npm run build
+        run: |
+          cd website
+          npm run build
