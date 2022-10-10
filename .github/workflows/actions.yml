@@ -17,16 +17,12 @@ jobs:
 
       - uses: actions/setup-node@v1
         with:
-          node-version: "16.14.0"
+          node-version: '16.14.0'
       - name: NPM Installation
-        run: |
-          cd website
-          npm install
+        run: npm install
 
       - name: Build
-        run: |
-          cd website
-          npm run build
+        run: npm run build
   pr:
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'pull_request' }}
@@ -39,13 +35,9 @@ jobs:
         uses: nrwl/nx-set-shas@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: "16.14.0"
+          node-version: '16.14.0'
       - name: NPM Installation
-        run: |
-          cd website
-          npm install
+        run: npm install
 
       - name: Build
-        run: |
-          cd website
-          npm run build
+        run: npm run build
