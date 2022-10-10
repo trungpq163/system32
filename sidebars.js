@@ -10,6 +10,7 @@ module.exports = {
           items: [
             'engineering/backend/restful-api',
             'engineering/security/api-security',
+            'engineering/macos-setup-guide',
           ],
         },
       ],
