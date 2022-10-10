@@ -6,12 +6,12 @@ on:
   pull_request:
 
 jobs:
-  main:
+  develop:
     runs-on: ubuntu-latest
     if: ${{ github.event_name != 'pull_request' }}
     steps:
       - uses: actions/checkout@v2
-        name: Checkout [main]
+        name: Checkout [develop]
         with:
           fetch-depth: 0
 
