@@ -12,6 +12,7 @@ module.exports = {
             'engineering/security/api-security',
           ],
         },
+        'engineering/setup/macos-setup-guide',
       ],
     },
   ],
