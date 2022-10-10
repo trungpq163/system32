@@ -5,7 +5,7 @@ module.exports = {
   baseUrl: "/",
   trailingSlash: true,
   favicon: "img/system32.gif",
-  organizationName: "trungpq163",
+  organizationName: "system32",
   projectName: "system32",
   onBrokenLinks: "ignore",
   themeConfig: {
