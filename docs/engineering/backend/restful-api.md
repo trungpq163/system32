@@ -1,7 +1,7 @@
 ---
-title: Restful API
+title: Writing REST API
 slug: engineering/backend/restful-api
-sidebar_label: Restful API
+sidebar_label: Writing REST API
 ---
 
 An API is a user interface for developers. Put the effort in to ensure it's not just functional but pleasant to use.
@@ -178,8 +178,8 @@ Multi data entries or array
 
 ## Error
 
-A JSON error body should provide a few things for the developer - a useful error message, a unique error code (that can be looked up for more details in the docs), and possibly detailed description. For this part, please check out [Error Handling](/engineering/error.md).
+A JSON error body should provide a few things for the developer - a useful error message, a unique error code (that can be looked up for more details in the docs), and possibly detailed description. For this part, please check out [Error Handling](https://github.com/dwarvesf/playbook/blob/master/engineering/error.md).
 
 ## References
 
-Original article: [RESTful API by Dwarves Foundations](https://github.com/dwarvesf/playbook/blob/master/engineering/restful.md)
+Source: [Writing RESTful API](https://github.com/dwarvesf/playbook/blob/master/engineering/restful.md)

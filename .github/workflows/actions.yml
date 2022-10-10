@@ -17,7 +17,7 @@ jobs:
 
       - uses: actions/setup-node@v1
         with:
-          node-version: '16.14.0'
+          node-version: "16.14.0"
       - name: NPM Installation
         run: |
           cd website
@@ -27,56 +27,6 @@ jobs:
         run: |
           cd website
           npm run build
-
-      - name: Get the content of config.json as config
-        id: docusaurus-2
-        run: echo "::set-output name=config::$(cat config.json | jq -r tostring)"
-
-      - name: Push indices to Algolia
-        uses: signcl/docsearch-scraper-action@master
-        env:
-          APPLICATION_ID: 8E6LWK96JA
-          API_KEY: 0285def6cfdb5ff895b665c604f0eead
-          CONFIG: '
-            {
-              "index_name": "docusaurus-2",
-              "start_urls": ["https://system32.vercel.app/"],
-              "sitemap_urls": ["https://system32.vercel.app/sitemap.xml"],
-              "sitemap_alternate_links": true,
-              "stop_urls": ["/tests"],
-              "selectors": {
-                "lvl0": {
-                  "selector": "(//ul[contains(@class,'menu__list')]//a[contains(@class, 'menu__link menu__link--sublist menu__link--active')]/text() | //nav[contains(@class, 'navbar')]//a[contains(@class, 'navbar__link--active')]/text())[last()]",
-                  "type": "xpath",
-                  "global": true,
-                  "default_value": "Documentation"
-                },
-                "lvl1": "header h1",
-                "lvl2": "article h2",
-                "lvl3": "article h3",
-                "lvl4": "article h4",
-                "lvl5": "article h5, article td:first-child",
-                "lvl6": "article h6",
-                "text": "article p, article li, article td:last-child"
-              },
-              "strip_chars": " .,;:#",
-              "custom_settings": {
-                "separatorsToIndex": "_",
-                "attributesForFaceting": ["language", "version", "type", "docusaurus_tag"],
-                "attributesToRetrieve": [
-                  "hierarchy",
-                  "content",
-                  "anchor",
-                  "url",
-                  "url_without_anchor",
-                  "type"
-                ]
-              },
-              "conversation_id": ["833762294"],
-              "nb_hits": 46250
-            }
-          '
-
   pr:
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'pull_request' }}
@@ -89,7 +39,7 @@ jobs:
         uses: nrwl/nx-set-shas@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: '16.14.0'
+          node-version: "16.14.0"
       - name: NPM Installation
         run: |
           cd website
