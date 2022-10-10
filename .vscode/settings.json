@@ -1,5 +1,36 @@
 {
   "cSpell.words": [
-    "docsearch"
-  ]
+    "fileupload",
+    "middlewares",
+    "trungpq",
+    "unsave",
+    "unvote",
+    "vercel"
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "node_modules": true
+  },
+  "editor.formatOnSave": true,
+  "[javascriptreact, typescript, typescriptreact, scss, css, json ]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact, json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "search.exclude": {
+    "**/package-lock.json": true,
+    "**/yarn.lock": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.tabSize": 2,
+  "editor.autoClosingQuotes": "always",
+  "editor.inlineSuggest.enabled": true
 }
