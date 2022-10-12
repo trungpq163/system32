@@ -3,41 +3,17 @@ on:
   push:
     branches:
       - release
-    workflow_dispatch:
-    inputs:
-      logLevel:
-        description: 'Log level'
-        required: true
-        default: 'warning'
+    workflow_dispatch: {}
 
 jobs:
-  notionPublish:
-    name: Notion Publish
+  release:
+    name: Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: lts/*
-
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-
-      - name: Pull from Notion
-        env:
-          DOCS_NOTION_TOKEN: ${{ secrets.DOCS_NOTION_TOKEN }}
-          DOCS_NOTION_ROOT_PAGE: ${{ secrets.DOCS_NOTION_ROOT_PAGE }}
-        run: yarn pull
-
-      - name: Commit New Source Material
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Commit content changes pulled from notion
 
       - name: Get the content of algolia.config.json as config
         id: algolia_config
