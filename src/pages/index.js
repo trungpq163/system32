@@ -7,7 +7,7 @@ import React from 'react';
 import styles from './styles.module.css';
 
 export default function Home() {
-  const {siteConfig = {}} = useDocusaurusContext();
+  const { siteConfig = {} } = useDocusaurusContext();
 
   return (
     <Layout title="Hello world" description={siteConfig.tagline}>
@@ -19,7 +19,7 @@ export default function Home() {
 }
 
 function HeroSection() {
-  const {siteConfig = {}} = useDocusaurusContext();
+  const { siteConfig = {} } = useDocusaurusContext();
 
   return (
     <header className={clsx('hero', styles.heroBanner)}>
@@ -37,9 +37,10 @@ function HeroSection() {
               <Link
                 className={clsx(
                   'button button--primary button--lg',
-                  styles.getStarted,
+                  styles.getStarted
                 )}
-                to="/engineering/backend/engineering/backend/restful-api/">
+                to="/engineering-backend-restful-api"
+              >
                 Get Started&nbsp;&nbsp;→
               </Link>
             </div>
