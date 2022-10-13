@@ -1,7 +1,7 @@
 {
   "index_name": "docusaurus-2",
-  "start_urls": ["https://system32.vercel.app/"],
-  "sitemap_urls": ["https://system32.vercel.app/sitemap.xml"],
+  "start_urls": ["system32-f6c68b.netlify.app/"],
+  "sitemap_urls": ["system32-f6c68b.netlify.app/sitemap.xml"],
   "sitemap_alternate_links": true,
   "stop_urls": ["/tests"],
   "selectors": {
