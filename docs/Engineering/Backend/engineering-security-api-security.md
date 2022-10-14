@@ -1,5 +1,5 @@
 ---
-title: Api Security Checklist1
+title: Api Security Checklist
 sidebar_position: 2
 slug: /engineering-security-api-security
 ---
