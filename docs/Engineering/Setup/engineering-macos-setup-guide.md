@@ -1,5 +1,5 @@
 ---
-title: macOS Setup Guide
+title: MacOS Setup Guide
 sidebar_position: 3
 slug: /engineering-macos-setup-guide
 ---
