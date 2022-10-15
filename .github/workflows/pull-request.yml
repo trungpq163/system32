@@ -1,0 +1,21 @@
+name: CI
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: pull-request
+        uses: repo-sync/pull-request@v2
+        with:
+          destination_branch: 'release'
+          github_token: ${{ secrets.AUTO_PR_TOKEN }}
+          pr_title: 'Pull Request from develop to release'
+          pr_body: ':crown: *An automated PR*'
+          pr_reviewer: 'trungpq163'
+          pr_assignee: 'trungpq163'
+          pr_label: 'auto-pr'
