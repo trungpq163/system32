@@ -34,6 +34,16 @@ jobs:
         with:
           commit_message: Commit content changes pulled from notion
 
+      - name: Create a pull request
+        uses: repo-sync/pull-request@v2
+        with:
+          source_branch: 'develop'
+          destination_branch: 'release'
+          github_token: ${{ secrets.AUTO_PR_TOKEN }}
+          pr_title: 'Pull Request from develop to release'
+          pr_body: ':crown: *An automated PR*'
+          pr_label: 'auto-pr'
+
       - name: Build
         run: yarn build
   pr:
