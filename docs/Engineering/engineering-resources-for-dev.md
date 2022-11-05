@@ -1,6 +1,6 @@
 ---
 title: Resources for Developer
-sidebar_position: 7
+sidebar_position: 8
 slug: /engineering-resources-for-dev
 ---
 
