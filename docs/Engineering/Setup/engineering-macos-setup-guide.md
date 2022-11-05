@@ -233,5 +233,5 @@ https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
 ## References
 
 
-Sources: [https://nartc.me/blog/macos-dev-setup/](https://nartc.me/blog/macos-dev-setup/)
+[https://nartc.me/blog/macos-dev-setup/](https://nartc.me/blog/macos-dev-setup/)
 
