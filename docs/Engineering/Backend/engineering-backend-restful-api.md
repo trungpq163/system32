@@ -206,5 +206,5 @@ A JSON error body should provide a few things for the developer - a useful error
 ## References
 
 
-Source: [Writing RESTful API](https://github.com/dwarvesf/playbook/blob/master/engineering/restful.md)
+[https://github.com/dwarvesf/playbook/blob/master/engineering/restful.md](https://github.com/dwarvesf/playbook/blob/master/engineering/restful.md)
 

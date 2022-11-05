@@ -63,5 +63,5 @@ slug: /engineering-security-api-security
 ## References
 
 
-Source: [API Security Checklist](https://github.com/shieldfy/API-Security-Checklist)
+[https://github.com/dwarvesf/playbook/blob/master/engineering/restful.md](https://github.com/dwarvesf/playbook/blob/master/engineering/restful.md)
 
