@@ -1,6 +1,6 @@
 ---
 title: Setting project goals
-sidebar_position: 5
+sidebar_position: 7
 slug: /engineering-setting-project-goals
 ---
 
