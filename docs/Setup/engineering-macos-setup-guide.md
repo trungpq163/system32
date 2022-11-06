@@ -1,6 +1,6 @@
 ---
 title: MacOS Setup Guide
-sidebar_position: 3
+sidebar_position: 9
 slug: /engineering-macos-setup-guide
 ---
 

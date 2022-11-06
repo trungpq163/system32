@@ -1,6 +1,6 @@
 ---
 title: DNS and how it works
-sidebar_position: 7
+sidebar_position: 4
 slug: /a941f11b-071c-4bc9-ade1-c97cbdbbd835
 ---
 

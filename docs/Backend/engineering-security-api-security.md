@@ -1,6 +1,6 @@
 ---
 title: Api Security Checklist
-sidebar_position: 2
+sidebar_position: 8
 slug: /engineering-security-api-security
 ---
 
