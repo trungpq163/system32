@@ -1,7 +1,7 @@
 ---
 title: MacOS Setup Guide
 sidebar_position: 9
-slug: /engineering-macos-setup-guide
+slug: /fbb79be7-6f05-455c-922d-f91b86a9653e
 ---
 
 
