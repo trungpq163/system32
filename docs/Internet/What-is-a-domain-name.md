@@ -1,6 +1,6 @@
 ---
 title: What is a domain name?
-sidebar_position: 8
+sidebar_position: 5
 slug: /c95e9633-f061-4730-a4bd-01e5e5e976cb
 ---
 

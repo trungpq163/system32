@@ -1,6 +1,6 @@
 ---
 title: How do browsers work?
-sidebar_position: 6
+sidebar_position: 3
 slug: /a5da474e-82b4-46a0-a1d5-da6519510152
 ---
 

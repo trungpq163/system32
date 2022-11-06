@@ -1,6 +1,6 @@
 ---
 title: What is HTTP?
-sidebar_position: 5
+sidebar_position: 2
 slug: /34d57b8e-867b-4af1-a009-9ce7766cf164
 ---
 

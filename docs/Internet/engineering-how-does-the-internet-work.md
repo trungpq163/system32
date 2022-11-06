@@ -1,6 +1,6 @@
 ---
 title: How does the Internet work?
-sidebar_position: 4
+sidebar_position: 1
 slug: /engineering-how-does-the-internet-work
 ---
 
