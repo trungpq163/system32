@@ -277,3 +277,9 @@ AWS offers [cloud hosting solutions](https://aws.amazon.com/websites/) for [s
 - [AWS Amplify Hosting](https://aws.amazon.com/amplify/hosting/) is scalable, fully managed CI/CD and hosting service for static websites and server-side-rendered web applications.
 - [Amazon S3](https://aws.amazon.com/s3/) provides storage options that you can use to upload files for web hosting.
 - [Amazon EC2](https://aws.amazon.com/ec2/) provides resizable computing capacity in the cloud. You can use it to host enterprise and other application-heavy websites.
+
+## References
+
+
+[https://aws.amazon.com/what-is/web-hosting/](https://aws.amazon.com/what-is/web-hosting/)
+
